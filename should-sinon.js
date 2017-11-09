@@ -1,8 +1,8 @@
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['should'], factory);
+    define(['should/as-function'], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory(require('should'));
+    module.exports = factory(require('should/as-function'));
   } else {
     factory(should);
   }
